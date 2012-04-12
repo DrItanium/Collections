@@ -63,5 +63,5 @@ namespace Libraries.Collections
 			return Value.GetHashCode() + IsBig.GetHashCode() + base.GetHashCode();
 		}
 	}
-    
+
 }

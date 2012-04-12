@@ -62,14 +62,14 @@ namespace Libraries.Collections
 				}
 				if(!translationTable.ContainsKey(index))
 				{
-          int target = 0;
-          if(Contains(value))
-            target = storage.IndexOf(value);
-          else
-          {
-					  target = storage.Count;
-					  storage.Add(value);
-          }
+					int target = 0;
+					if(Contains(value))
+						target = storage.IndexOf(value);
+					else
+					{
+						target = storage.Count;
+						storage.Add(value);
+					}
 					translationTable[index] = target;
 				}
 				else
